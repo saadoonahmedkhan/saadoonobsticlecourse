@@ -16,8 +16,12 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xvalue = Input.GetAxis("Horizontal")*Time.deltaTime*moveSpeed;
-        float zvalue = Input.GetAxis("Vertical")*Time.deltaTime*moveSpeed;
+        MovePlayer();
+    }
+    void MovePlayer()
+    {
+        float xvalue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        float zvalue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         transform.Translate(xvalue, yvalue, zvalue);
     }
 }
