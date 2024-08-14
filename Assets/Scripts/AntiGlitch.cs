@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AntiGlitch : MonoBehaviour
 {
-    float boundX = 8.5085f;
+    float boundX = 8.6f;
     float boundXNeg = -8.5f;
     float boundZ = 8.7366f;
     float boundZNeg = -8.548f;

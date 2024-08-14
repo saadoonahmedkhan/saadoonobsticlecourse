@@ -7,9 +7,12 @@ public class ObjectHit : MonoBehaviour
     private MeshRenderer objRenderer;
     [SerializeField]
     private Color originalcolor;
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        GetComponent<MeshRenderer>().material.color= Color.red;
+        if (collision.gameObject.tag == "Player")
+        {
+            GetComponent<MeshRenderer>().material.color = Color.red;
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
