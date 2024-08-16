@@ -9,8 +9,11 @@ public class Scorer : MonoBehaviour
     {   if (!(collision.gameObject.tag == "Hit"|| collision.gameObject.tag == "Ground"))
         {
             hits++;
-            if (hits == 1) Debug.Log("You have bumped into a wall " + hits + " time");
-            else Debug.Log("You have bumped into a wall " + hits + " times");
+            if(hits ==6)
+            {
+                Destroy(gameObject);
+
+            }
         }
     }
 }

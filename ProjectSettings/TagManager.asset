@@ -7,6 +7,9 @@ TagManager:
   - Hit
   - Ground
   - Obstacles
+  - RollerBall
+  - Dropper
+  - StopPos
   layers:
   - Default
   - TransparentFX

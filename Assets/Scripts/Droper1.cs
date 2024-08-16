@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Droper : MonoBehaviour
+public class Droper1 : MonoBehaviour
 {
     [SerializeField]
-    private float waitTime = 1f;
+    private float waitTime;
      
     private MeshRenderer meshRenderer;
     Rigidbody rigidBody;
