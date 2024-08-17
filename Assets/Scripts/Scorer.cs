@@ -12,8 +12,13 @@ public class Scorer : MonoBehaviour
             if(hits ==6)
             {
                 Destroy(gameObject);
+                Restart();
 
             }
         }
+    }
+    private void Restart()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 }
